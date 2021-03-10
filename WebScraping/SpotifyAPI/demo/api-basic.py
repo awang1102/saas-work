@@ -17,7 +17,9 @@ parameters = {
 response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)
 
 pass_times = response.json()['response']
-# jprint(pass_times)
+print(response.json())
+
+jprint(pass_times)
 
 risetimes = []
 
